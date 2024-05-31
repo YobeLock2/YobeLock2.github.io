@@ -7,7 +7,7 @@ import Payment from './Payment.js';
 import {BrowserRouter, Routes, Route, Router } from 'react-router-dom'
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/ticket" element={<Ticket />} />
