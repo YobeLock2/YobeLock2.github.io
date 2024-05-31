@@ -1,0 +1,126 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal_content {
+    border-radius: 12px;
+    transform: scale(0.5);
+    transition: 0.3s all;
+    overflow: hidden;
+    
+}
+
+.modal_content.active {
+    transform: scale(1);
+}
+
+.modal_content_standart {
+    background-color: #FFFBF2D1;
+    padding: 50px 60px;
+}
+
+.modal_content_standart input {
+    margin: 36px 0;
+    width: 230px;
+    display: block;
+    padding: 17px 20px;
+    border: 1px solid #052026;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.modal_content_standart button {
+    margin: 24px auto;
+    display: block;
+    width: 271px;
+    height: 53px;
+    border-radius: 12px;
+    font-weight: 400;
+}
+
+.modal_content_standart h2 {
+    text-align: center;
+    font-size: 32px;
+    font-family: lora;
+    font-weight: 400;
+    margin: 0;
+}
+
+.modal_content_standart p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.modal_content_standart a {
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content_check {
+    position: absolute;
+    left: 21px;
+    bottom: 30px;
+    right: 0;
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+#agree {
+    margin: 0;
+    display: inline;
+    width: 15px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+.agree_label {
+    font-size: 12px;
+}
+
+@media (max-width: 420px) {
+    .modal_content_standart {
+        padding: 15px 20px;
+        margin: 3px;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .modal_content_sing {
+        padding-bottom: 60px;
+    }
+
+    .modal_content_standart input{
+        max-width: 70%;
+        margin: 30px auto;
+    }
+
+    .modal_content_standart h2 {
+        font-size: 25px;
+    }
+
+    .modal_content_standart button {
+        max-width: 100%;
+    }
+}

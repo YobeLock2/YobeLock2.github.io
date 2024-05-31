@@ -1,0 +1,112 @@
+#payment_section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#payment_section .row {
+    gap: 30px;
+}
+.payment_main_block_bottom_timer {
+    margin-top: 50px;
+}
+.payment_main_block {
+    width: 840px;
+    border: 1px solid #0520268A;
+    padding: 0;
+    border-radius: 12px;
+}
+
+.payment_main_block_top {
+    padding: 25px 50px 25px 50px;
+    border-bottom: 1px solid #0520268A;
+    display: flex;
+}
+.payment_main_block_top_send {
+    width: 250px;
+}
+.payment_main_block_top_receive {
+    width: 250px;
+}
+.payment_main_block_bottom {
+    padding: 25px 50px 25px 50px;
+}
+
+.paymentConfirm_btn {
+    width: 295px;
+    margin: auto;
+    display: block;
+    height: 55px;
+    border-radius: 12px;
+}
+
+.payment_req_info_data {
+    display: inline-block;
+    margin-right: 5px;
+}
+.payment_req_info_type {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.payment_progress_block {
+    width: 290px;
+    padding: 20px;
+    border: 1px solid #0520268A;
+
+    border-radius: 12px;
+}
+
+.payment_progress_block_stage {
+    height: 45px;
+    text-align: center;
+    line-height: 46px;
+    border: 1px solid #0520268A;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.payment_progress_block_stage:last-child {
+    margin-bottom: 0px;
+}
+.stage_first {
+    background: #F6F6F6;
+    color: #00000070;
+}
+.stage_second {
+    background: #33E399;
+}
+.stage_third {
+    background: #FFFFFF;
+}
+.payment_progress {
+    width: auto;
+}
+
+.payment_main_block_bottom_timer b {
+    color: #0061A8;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 575.98px) {
+    .payment_main_block {
+        max-width: 93vw;
+    }
+    .payment_main_block_top {
+        padding: 15px;
+    }
+    .payment_main_block_bottom {
+        padding: 15px;
+    }
+}
+@media (max-width: 425px) {
+    .payment_main_block {
+        max-width: 93vw;
+    }
+    .payment_main_block_top {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .payment_main_block_bottom {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,227 @@
+
+
+.container {
+    box-sizing: border-box;
+}
+
+#change_section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.change_block_left {
+    width: 350px;
+}
+.change_block_center {
+    width: 530px;
+}
+.change_block_right {
+    width: 350px;
+}
+.changer_block_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.changer_block_input {
+    width: 100%;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+.changer_block_input:first-child {
+    margin-top: 0px;
+}
+
+.changer_block_input h3 {
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+.input_standard {
+    position: relative;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #0520268A;
+}
+
+.input_inp_dd {
+    display: flex;
+}
+
+.input_inp_dd input {
+    width: 100%;
+    padding: 20px 5px 20px 20px;
+}
+
+.input_inp_dd select, .input_inp_dd_select {
+    width: 30%;
+    border-left: 1px solid #0520268A;
+    display: flex;
+    align-items: center;
+}
+
+.input_dd select {
+    width: 100%;
+    padding: 20px;
+}
+
+.changer_btn {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    width: 250px;
+    height: 63px;
+    border-radius: 12px;
+    font-size: 20px;
+    border: 1px solid #0520268A;
+}
+
+.changer_block_timer_course {
+    height: 60px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0520268A;
+}
+
+.change_block_left .side_block {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.change_block_left_hint {
+    width: 100%;
+    min-height: 72px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #0520268A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.change_block_left_a {
+    margin-bottom: 0;
+}
+
+.side_block a {
+    text-decoration: unset;
+}
+
+.input_error {
+    position: absolute;
+    font-size: 12px;
+    bottom: -18px;
+    color: #ed0b0b;
+}
+
+.changer_block_ticket h3 {
+    margin: 20px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.changer_block_timer p {
+    text-align: center;
+    font-weight: 400;
+}
+
+/* media part */
+
+@media (max-width: 1399.98px) {
+    .changer_block_inputs {
+        justify-content: center;
+    }
+
+    .changer_block_input {
+        width: 300px;
+    }
+
+    .change_block_right {
+        display: none;
+    }
+
+    .side_block.hide {
+        display: block;
+    }
+}
+
+@media (max-width: 1199.9px) {
+    .changer_block_inputs {
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 991.98px) {
+
+    .change_block_left {
+        width: 40%;
+    }
+    .change_block_center {
+        width: 60%;
+    }
+    .center_block {
+        padding: 20px 25px 20px;
+    }
+    .changer_block_input {
+        width: 400px;
+    }
+    .changer_btn {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .change_block_left {
+        width: 100%;
+    }
+
+    .change_block_center{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .change_block_right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .side_block.hide {
+        display: none;
+    }
+    
+    .change_block_right {
+        display: block;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .changer_block {
+        padding: 40px;
+    }
+
+    .changer_block_input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .input_inp_dd_select {
+        width: 45%;
+    }
+}
+
+@media (max-width: 370px) {
+    .input_inp_dd_select {
+        width: 60%;
+    }
+}
